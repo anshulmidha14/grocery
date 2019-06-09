@@ -1,0 +1,294 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.min.css";
+/*----------------------------
+   element      
+----------------------------*/
+* {-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
+html { text-rendering: optimizeLegibility !important;-webkit-font-smoothing: antialiased !important;}
+.nopadding-left{padding-left:0;}
+.nopadding-right{padding-right:0;}
+.nopadding{padding-left:0;padding-right:0;}
+.mb10{padding-left:10px;padding-right:10px;}
+.tabbody{margin-right: -10px; margin-left: -10px;}
+*{margin:0; padding:0}
+a{ text-decoration:none;}
+a:hover{ text-decoration:none !important;}
+header, nav, section, article, aside, footer { display:block;}
+html {font-size: 100%;}
+body {font-size: 12px;font-family: 'Roboto', sans-serif;line-height: 26px;color: #777;-webkit-font-smoothing: antialiased;font-weight: normal;}
+h1, h2, h3, h4, h5, h6 {padding: 5px 0 15px 0;color: #333;font-weight: normal;-webkit-font-smoothing: antialiased;}
+:-ms-input-placeholder{color: #000;}
+/*----------------------------
+   header      
+----------------------------*/
+
+.header{background: #000; width: 100%;padding:25px 0;-webkit-transition: all 0.4s ease-in-out;-moz-transition: all 0.4s ease-in-out;}
+.shrink { top:0;
+    padding: 0px 0;
+    background: rgba(0, 0, 0, 0.95);
+}.navbar-toggle {background: #00bcd4;z-index: 99;}
+.navbar-toggle span { background: #fff;}
+#main-menu {display: inline-block; vertical-align: top;}
+.dl-main-nav-section .navbar-nav>li>a {letter-spacing: 3px;
+    text-align: center; color: #ffffff; font:700 20px/20px "Roboto Condensed", sans-serif;border:8px solid transparent; padding:10px}
+.dl-main-nav-section .navbar{margin-bottom:0;}
+.dl-main-nav-section .navbar-nav>li>a { padding-top: 10px; padding-bottom: 10px;}
+.dl-main-nav-section .nav>li>a:focus, 
+.dl-main-nav-section .nav>li>a:hover {text-decoration: none; background:none; color:#fff;}
+.dl-main-nav-section .open > .dropdown-menu {-webkit-transform: scale(1, 1);transform: scale(1, 1);  opacity:1;}
+.dl-main-nav-section .dropdown-menu {opacity:.3;-webkit-transform-origin: top;transform-origin: top;-webkit-animation-fill-mode: forwards;  animation-fill-mode: forwards; -webkit-transform: scale(1, 0);transition: all 0.3s linear;-webkit-transition: all 0.3s linear;}
+.dl-main-nav-section .caret-up {width: 0;height: 0; border-left: 4px solid rgba(0, 0, 0, 0);border-right: 4px solid rgba(0, 0, 0, 0);border-bottom: 4px solid;display: inline-block;margin-left: 2px;vertical-align: middle;}
+.header-logo{position:absolute;z-index:999;text-align:center;margin:0 auto;left: 0;right: 0;}
+/*----------------------------
+        breadcrumbs
+----------------------------*/
+/*-------------------------------
+		Home Page about
+--------------------------------*/
+.dl-main-about-section{ padding:20px 0;}
+.dl-main-about-box{ background:#fff;}
+.dl-main-about-title h2{color:#000;font-family: 'Roboto', sans-serif; font-size:36px; font-weight:600; margin-top: 0;}
+.dl-main-about-content-media {padding: 10px;border: 1px solid #eee;width: 40%;float: left;margin: 0 20px 20px 0;}
+.dl-main-about-content p{color:#000;font-size: 14px;font-family: 'Roboto', sans-serif;line-height: 24px;font-weight:300;letter-spacing: 0.5px;margin-bottom:30px;text-align: justify;}
+.dl-main-about-info-box{ background: #f4f4f4; padding: 20px}
+.dl-main-about-info-title{color:#000;font-family: 'Roboto', sans-serif;font-size: 26px;font-weight: 400;padding-bottom: 20px;}
+.contact-info{ list-style:none; margin:0; padding:0;}
+.contact-info li{margin-bottom:10px;float: left;width: 100%;position: relative;} 
+.contact-info li span{font-size: 14px;line-height: 24px;color: #000; text-align:justify;font-family: 'Roboto', sans-serif;}
+.contact-info li i{font-size: 14px;line-height: 24px;color: #000; margin-right: 10px;}
+
+.about-social {margin: 0;padding:10px 0;}
+.about-social li {display: inline-block;margin: 0 0px;padding: 0; *zoom: 1;*display: inline;}
+.about-social li a {display: block;color: #fff;text-align: center;line-height: 30px;height: 30px;width: 30px;background: #235985;    border-radius: 50%;}
+.about-social li a i{color: #fff;line-height: 30px;text-align: center;font-size: 13px;}
+.about-social li a:hover {color: #6f818f;}
+
+
+
+
+/*-------------------------------
+		About section
+--------------------------------*/
+.about-home-section{background-image:url(assets/images/bg-1.jpg);background-repeat: no-repeat;background-position: center;background-attachment: scroll;background-size: cover;background-color: #ffffff;}
+
+.about-home-section{ padding:5em 0 7em 0}
+.about-home-content-box{ text-align:center}
+.about-home-content-box h2{letter-spacing: 10px;  color: #1a1a1a;margin-bottom: 17px;text-transform: uppercase;  font: 700 60px/72px "Roboto Condensed", sans-serif;}
+.about-home-content-box h4{letter-spacing: 9px;  color: #1a1a1a; margin-bottom: 44px;text-transform: uppercase;  font: 700 30px/30px "Roboto Condensed", sans-serif;}
+.about-home-content-box p {color: #1a1a1a;letter-spacing: 0.5px;font-size: 14px;line-height: 24px;    margin-bottom: 46px;}
+.about-cherry-btn{background: #1a1a1a;font-size: 14px;line-height: 30px; padding: 10px 33px 10px 33px;text-transform: uppercase; letter-spacing: 2.8px;  font-weight: 500; border: 4px solid transparent;color: #fff;text-decoration: none!important; text-align: center;    display: inline-block;    -webkit-transition: all 200ms linear;  transition: all 200ms linear;}
+.about-cherry-btn:hover {background: transparent;color: #1a1a1a;border-color: #1a1a1a;}
+
+.main-home-product{ margin-top:5em}
+.main-product-slider-box{width: 100%;height: 100%;position: relative; text-align:center;}
+.main-product-slider-box-inner-title {position: absolute;top: 50%;left: 0;right: 0;transform: translateY(-50%);-webkit-transform: translateY(-50%);margin-bottom: 0;padding: 0 30px;line-height: 44px;font-weight: 700;letter-spacing: 9px;text-transform: uppercase;}
+.main-product-slider-box .main-product-slider-box-media{margin-bottom: 0!important;background-color: #000;}
+.main-product-slider-box .main-product-slider-box-media img {opacity: .5;transition: 0.3s all ease;width: 100%;}
+.main-product-slider-box .main-product-slider-box-media:hover img {opacity: .2;}
+.main-product-slider-box-inner-title a {color: #fff;}
+
+.service-home-section-box{width: 100%;height: 100%;position: relative; text-align:center;}
+.main-product-slider-box-inner-title {}
+
+.service-home-section-box .service-home-section-box-content{position: absolute;top: 0;left: 0;right: 0;bottom: 0;padding: 46px;z-index: 2;}
+.service-home-section-box .service-home-section-box-content:before {content: "";position: absolute;top: 50%;left: 50%;right: 50%;bottom: 50%;opacity: 0;background: #252525;z-index: -1;-webkit-transition: 0.5s all ease;-o-transition: 0.5s all ease;transition: 0.5s all ease;}
+.service-home-section-box .service-home-section-box-media img{ width:100%}
+.service-home-section-box .service-home-section-box-content:hover:before {top: 46px;left: 46px;right: 46px;bottom: 46px;opacity: 1;}
+.service-home-section-box-content-inverse{position: absolute;top: 50%;left: 0;right: 0;transition: .5s all ease;padding: 30px 20%;text-align: center;transform: translateY(-34%);-webkit-transform: translateY(-34%);z-index: 2;}
+.service-home-section-box-content-inverse{transform: translateY(-50%);-webkit-transform: translateY(-50%);}
+
+.service-home-section-box-content-title a{text-transform: uppercase;line-height: 49px;word-wrap: normal;letter-spacing: 9px;color: #fff;font: 700 30px/30px "Roboto Condensed", sans-serif;margin-bottom: 44px;
+font-size: 24px;}
+
+.service-home-btn{background: #fff;font-size: 14px;line-height: 30px; padding: 10px 33px 10px 33px;text-transform: uppercase; letter-spacing: 2.8px;  font-weight: 500; border: 4px solid transparent;color: #000;text-decoration: none!important; text-align: center;    display: inline-block;    -webkit-transition: all 200ms linear;  transition: all 200ms linear; opacity: 0;}
+.service-home-section-box:hover .service-home-btn{opacity: 1;}
+.service-home-btn:hover {background: transparent;color: #fff;border-color: #fff; opacity:1;}
+
+.main-home-row4-section{background-image:url(assets/images/parallax-1.jpg);background-repeat: no-repeat;background-position: center;background-attachment: scroll;background-size: cover;background-color: #ffffff;padding:5em 0}
+
+.main-home-row4-section-box{ text-align:center;}
+.main-home-row4-section-box-icon{position: relative;float: none;margin: 0;margin-bottom: 26px;font-size: 72px;line-height: 1;}
+.main-home-row4-section-box-icon:after {content: "";position: absolute;top: 50%;transform: translateY(-50%);-webkit-transform: translateY(-50%);height: 7px;width: 74px;}
+.main-home-row4-section-box-icon:before, 
+.main-home-row4-section-box-icon:after {background: #fff;}
+.main-home-row4-section-box-icon:before {left: -15px;}
+.main-home-row4-section-box-icon:before, 
+.main-home-row4-section-box-icon:after {background: #fff;}
+.main-home-row4-section-box-icon:after {right: -15px;}
+.main-home-row4-section-box-icon:before, 
+.main-home-row4-section-box-icon:after {content: "";position: absolute;top: 50%;transform: translateY(-50%);-webkit-transform: translateY(-50%);height: 7px;width: 74px;}
+.main-home-row4-section-box-icon i{ color:#fff;}
+
+.main-home-row4-section-box-content-title a{text-transform: uppercase;line-height: 49px;word-wrap: normal;letter-spacing: 0;color: #fff;font: 30px/58px "Roboto Condensed", sans-serif;margin-bottom: 44px;font-weight: 300;}
+
+.main-home-row4-section-box-content p{color: #fff;letter-spacing: 0.5px;font-size: 14px;line-height: 24px;    margin-bottom: 46px;}
+
+.home-row4-btn{background: #fff;font-size: 14px;line-height: 30px; padding:7px 20px 7px 20px;text-transform: uppercase; letter-spacing: 2.8px;  font-weight: 500; border: 4px solid transparent;color: #000;text-decoration: none!important; text-align: center;    display: inline-block;    -webkit-transition: all 200ms linear;  transition: all 200ms linear; }
+.home-row4-btn:hover {background: transparent;color: #fff;border-color: #fff; opacity:1;}
+
+
+
+.main-home-row4a-section-box{position: relative; width:100%;padding: 40px 56px;border: 7px solid #fff;display: inline-block; margin-top:5em}
+
+.main-home-row4a-section-box-content{ text-align:center;}
+.main-home-row4a-section-box-content h2{text-transform: uppercase;letter-spacing: 10px;margin-bottom: 20px;font-weight: 400;color: #fff;font: 700 50px/72px "Roboto Condensed", sans-serif;}
+.main-home-row4a-section-box-content h4{text-transform: uppercase;letter-spacing: 10px;margin-bottom: 20px;font-weight: 400;color: #fff;font: 700 30px/30px "Roboto Condensed", sans-serif;}
+
+.row4a-section-btn{background: #fff;font-size: 14px;line-height: 30px; padding:7px 20px 7px 20px;text-transform: uppercase; letter-spacing: 2.8px;  font-weight: 500; border: 4px solid transparent;color: #000;text-decoration: none!important; text-align: center;    display: inline-block;    -webkit-transition: all 200ms linear;  transition: all 200ms linear; }
+.row4a-section-btn:hover {background: #000;color: #fff;border-color: #111; }
+.row4a-section-btn:active {background: #000;color: #fff;}
+.row4a-section-btn{position: absolute;top: 100%;left: 50%;margin-top: -22px;transform: translateX(-50%);-webkit-transform: translateX(-50%);white-space: nowrap;}
+
+/*-------------------------------
+		Footer
+--------------------------------*/
+
+.main-top-footer{padding-top: 94px;padding-bottom: 92px; background-color: #252525;font: 700 30px/30px "Roboto Condensed", sans-serif;}
+
+.footer-logo a{font: 700 50px/50px "Roboto Condensed", sans-serif;display: block;font-weight: 700;line-height: 1;letter-spacing:4px;color: #404040;}
+.footer-copyright{font: 700 14px/30px "Roboto Condensed", sans-serif;display:inline-block;font-weight: 700;line-height: 1;letter-spacing:4px;color: #404040; text-transform:uppercase}
+.footer-copyright a{font: 700 14px/30px "Roboto Condensed", sans-serif;display: inline-block;font-weight: 700;line-height: 1;letter-spacing:4px;color: #404040;}
+
+.footer-widget-box-title{font-size: 14px;line-height: 20px;text-transform: uppercase;font: 30px/58px "Roboto Condensed", sans-serif;color: #404040;margin-top: 0;padding:0;}
+.foot-email{font-size: 14px;line-height: 20px;text-transform: uppercase;font: 30px/58px "Roboto Condensed", sans-serif;
+color: #404040;}
+
+.foot-phone a{font: 700 30px/30px "Roboto Condensed", sans-serif;display: inline-block;font-weight: 700;color: #404040;}
+.foot-phone a:hover {color: #fff;}
+.foot-address p{font: 700 14px/24px "Roboto Condensed", sans-serif;display: inline-block;font-weight: 700;color: #404040;margin-top: 15px; margin-bottom: 0;}
+
+.foot-email{font: 700 14px/30px "Roboto Condensed", sans-serif;display: inline-block;font-weight: 700;color: #404040;margin-top: 15px;}
+.foot-email a{font: 700 14px/30px "Roboto Condensed", sans-serif;display: inline-block;font-weight: 700;color: #404040;}
+.foot-email a:hover{color: #fff;}
+
+.footer-follow-list{ list-style:none; margin:0; padding:0;}
+.footer-follow-list li{position: relative; padding: 0 0 10px 18px;float: left;margin: 0 0 0 5px;}
+.footer-follow-list li a{ font-size:30px; color:#404040}
+.footer-follow-list li a:hover{color:#bdbdbd}
+   
+.main-bootom-footer-map {
+height: 100%;
+position:relative
+}  
+
+#map {
+width: 100%;
+height: 320px;
+}
+/*-------------------------------
+		 Breadcrumbs
+--------------------------------*/
+
+.breadcrumbs-wrapper{padding:13px 0 0 0;background:#f7f0e5;}
+ul.breadcrumbs li {padding:0 10px;display: inline-block; list-style: none;letter-spacing: 9px; text-align: center; color: #ffffff;  font: 300 22px/34px "Roboto Condensed", sans-serif; text-transform:uppercase;}
+ul.breadcrumbs li a{letter-spacing: 9px; text-align: center; color: #ffffff;  font: 300 22px/34px "Roboto Condensed", sans-serif;text-transform:uppercase;}
+ul.breadcrumbs li a:hover{ color:#ffa726;}
+ul.breadcrumbs li a:after {content: "|";width: 5px;height: 5px;border-radius: 50%;display: inline-block;margin: 0 0 0 10px;line-height: 25px;}
+
+
+/*-------------------------------
+		 About Page
+--------------------------------*/
+.jin-main-internal-page{background:url(assets/images/slide-3.jpg); height:600px;}
+.breadcrumbs-site-box{position: relative;top: 30em;width: 60%;margin: 0 auto;text-align: center;}
+.breadcrumbs-site-box-inner{position: relative;width: 100%;padding:10px 20px;border: 7px solid #fff;display: inline-block;margin-top: 5em;}
+.jin-entry-title{text-transform: uppercase;font:700 30px/34px "Roboto Condensed", sans-serif;letter-spacing: 12px;color: #ffffff;padding: 0;margin: 0 0 15px 0;}
+.jin-about-home-content-box p {color: #1a1a1a;letter-spacing: 0.5px;font-size: 14px;line-height: 24px;margin-bottom: 10px;text-align:justify;}
+
+.jin-about-nature-box-content h2 {font-weight: 300;text-transform: uppercase;margin-bottom: 17px;font: 30px/42px "Roboto Condensed", sans-serif; margin-top:0; padding:0; letter-spacing:0.5px;text-align:left;}
+.jin-about-nature-box-content p {color: #1a1a1a;letter-spacing: 0.5px;font-size: 14px;line-height: 24px;margin-bottom: 30px;text-align:left;}
+
+.jin-about-nature-box-content-btn {text-align: left;}
+.jin-about-nature-box-content-btn a{background: #1a1a1a;font-size: 14px;line-height: 30px; padding: 10px 33px 10px 33px;text-transform: uppercase; letter-spacing: 2.8px;  font-weight: 500; border: 4px solid transparent;color: #fff;text-decoration: none!important; text-align: center;    display: inline-block;    -webkit-transition: all 200ms linear;  transition: all 200ms linear;}
+.jin-about-nature-box-content-btn a:hover {background: transparent;color: #1a1a1a;border-color: #1a1a1a;}
+
+
+.jin-home-row4-section{background-image:url(assets/images/parallax-1.jpg);background-repeat: no-repeat;background-position: center;background-attachment: scroll;background-size: cover;background-color: #ffffff;padding:5em 0}
+
+.jin-home-row4-section h2{letter-spacing: 10px;  color: #fff;margin-bottom: 17px;text-transform: uppercase;  font: 700 60px/72px "Roboto Condensed", sans-serif; text-align:center;}
+
+.jin-home-row4-section-box-content-title a{text-transform: uppercase;line-height: 49px;word-wrap: normal;letter-spacing: 0;color: #fff;font: 30px/58px "Roboto Condensed", sans-serif;margin-bottom: 44px;font-weight: 300;}
+.jin-home-row4-section-box-content p{color: #fff;letter-spacing: 0.5px;font-size: 14px;line-height: 24px;    margin-bottom: 46px;}
+
+/*-------------------------------
+		 FEATURES Page
+--------------------------------*/
+.jin-features-section{background-image:url(assets/images/bg-1.jpg);background-repeat: no-repeat;background-position: center;background-attachment: scroll;background-size: cover;background-color: #ffffff;}
+.jin-features-section{ padding:5em 0 7em 0}
+
+
+.jin-features-row-box{ background:#1a1a1a; position:relative; margin-bottom:3em;}
+.jin-features-row-box-media img{ width:100%;}
+.jin-features-row-box-content{padding: 60px 64px;}
+
+.jin-features-row-box-content h3 {text-transform: uppercase;margin-bottom: 17px;font:700 30px/35px "Roboto Condensed", sans-serif; margin-top:0; padding:0; letter-spacing:8px;text-align:left;color: #fff;}
+
+.jin-features-row-box-content p {color: #fff;letter-spacing: 0.5px;font-size: 14px;line-height: 24px;margin-bottom: 30px;text-align:left;}
+
+.jin-features-row-box-content-btn {text-align: left;}
+.jin-features-row-box-content-btn a{background: #fff;font-size: 14px;line-height: 30px; padding:7px 24px 7px 24px;text-transform: uppercase; letter-spacing: 2.8px;  font-weight: 500; border: 4px solid transparent;color: #1a1a1a;text-decoration: none!important; text-align: center;    display: inline-block;    -webkit-transition: all 200ms linear;  transition: all 200ms linear;}
+.jin-features-row-box-content-btn a:hover {background: transparent;color: #fff;border-color: #fff;}
+.add-list input[type="text"],.add-list input[type="file"]  {
+    display: block;
+    padding: 7px;
+    background: transparent;
+    width: 65%;
+    margin: 0 auto 10px;
+    border: 2px solid #000;
+    border-radius: 5px;
+    color: #000;
+    font-size: 16px;
+}
+.add-list .alert{
+    width: 65%;
+    margin: 5px auto;
+    padding: 5px;
+}
+.add-list input[type="submit"] {
+    display: block;
+    padding: 5px 25px;
+    background: black;
+    margin: 0 auto 10px;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+form.add-list {
+    padding: 30px 15px 15px 15px;
+    box-shadow: 1px 1px 31px;
+    border-radius: 5px;
+    background: #0000002e;
+}
+.list-content {
+    padding: 30px 15px 15px 15px;
+    box-shadow: 1px 1px 31px;
+    border-radius: 5px;
+    background: #0000002e;
+}
+.list-content li {
+    list-style: none;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 3px 10px;
+    color:#000;
+    position: relative;
+}
+.list-content li:before{
+    content: ">>";
+    padding: 0 10px 0 0;
+}
+span.action {
+    float: right;
+}
+span.action a{
+    padding: 3px 10px;
+    margin: 0 3px;
+}
+span.action a.remove{
+    background: #ff0000;
+    border-color: #ff0000;
+}

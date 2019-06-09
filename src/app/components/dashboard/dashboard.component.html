@@ -1,0 +1,24 @@
+
+<div class="about-home-section">
+    
+  <div class="container">
+    <div class="main-home-product">
+        <div id="main-product-slider">
+              <div class="col-md-3" *ngFor='let newlist of list'>
+                  <div class="main-product-slider-box">
+                      <div class="main-product-slider-box-inner clearfix">
+                      <figure class="main-product-slider-box-media">
+                      <a [routerLink]="['/products', newlist]"  class="post-thumbnail_link">
+                      <img src="../../../assets/images/img04-370x311.jpg" alt=""></a>
+                      </figure>
+                      <h3 class="main-product-slider-box-inner-title"><a [routerLink]="['/products', newlist]" title="Shopping Lists">{{newlist}}</a></h3>
+                      </div>
+                  </div>
+              </div>
+              
+              
+          </div>
+      </div>
+  </div>
+</div>
+  

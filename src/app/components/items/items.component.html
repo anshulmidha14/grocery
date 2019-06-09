@@ -1,0 +1,74 @@
+<div class="about-home-section">
+
+
+    
+  <div class="container">
+      <div class="main-home-product">
+          <div id="main-product-slider">
+              <div class="col-md-8 col-md-offset-2">
+                  <div class="main-product-slider-box-inner clearfix">
+                      <h3 class="title">Create Item List</h3>
+                      <form class="add-list" [formGroup]="itemForm" (ngSubmit)="onSubmit(itemForm)" [hidden]='addform'>
+                            
+                            <div *ngIf="existval" class="alert alert-danger">
+                                <strong>{{ itemForm.get('item').value }}</strong> already exists.
+                            </div>
+                            <input type="text" formControlName="item" placeholder="Add list" (keyup)="checkExist()">
+                             <div *ngIf="!itemForm.get('item').hasError('required')" class="alert alert-success">
+                                <p>Your choosen name: {{ itemForm.get('item').value }}</p>
+                            </div>
+                            <div *ngIf="itemForm.get('item').hasError('minlength')" class="alert alert-danger">
+                            Oops, please provide a min 4 character name!
+                            </div>
+                            <div *ngIf="itemForm.get('item').hasError('maxlength')" class="alert alert-danger">
+                                Oops, please provide a max 15 character name!
+                            </div>
+                          
+                          
+                          <input type="submit" name="submit" value="Add" [disabled]="itemForm.invalid">
+                      </form>
+                      <form class="add-list" [formGroup]="itemForm" (ngSubmit)="OnEdit(itemForm)" [hidden]='editform'>
+                            
+                        <div *ngIf="existval" class="alert alert-danger">
+                            <strong>{{ itemForm.get('item').value }}</strong> already exists.
+                        </div>
+                      <input type="text" formControlName="item" placeholder="Add list" (keyup)="checkExist()">
+                      <input type="hidden" formControlName="olditem">
+                      <div *ngIf="!itemForm.get('item').hasError('required')" class="alert alert-success">
+                      <p>Your choosen name: {{ itemForm.get('item').value }}</p>
+                    </div>
+                   <div *ngIf="itemForm.get('item').hasError('minlength')" class="alert alert-danger">
+                    Oops, please provide a min 4 character name!
+                    </div>
+                    <div *ngIf="itemForm.get('item').hasError('maxlength')" class="alert alert-danger">
+                        Oops, please provide a max 15 character name!
+                        </div>
+                      
+                      
+                      <input type="submit" name="submit" value="Update" [disabled]="itemForm.invalid">
+                  </form>
+                  </div>
+              </div>
+              <div class="col-md-8 col-md-offset-2">
+                  <h3 class="title">Shopping List</h3>
+                  <ul class="list-content" >
+                      <li *ngFor='let newlist of list | paginate: { itemsPerPage: 10, currentPage: p }'><a [routerLink]="['/products', newlist]">{{newlist}}</a> 
+                        <span class="action">
+                            <a class="btn btn-primary a-btn-slide-text remove" (click)="delete(newlist)">
+                                <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                            </a>
+                            <a class="btn btn-primary a-btn-slide-text edit" (click)="edit(newlist)">
+                                <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
+                            </a>
+                        </span>
+                    </li>
+                  </ul>
+                  <pagination-controls (pageChange)="p = $event" autoHide="true"></pagination-controls>
+                  <div class="alert alert-danger" *ngIf="list.length ==0"> No Shoping List found </div>
+              </div>
+              
+          </div>
+      </div>
+  </div>
+  
+</div>
